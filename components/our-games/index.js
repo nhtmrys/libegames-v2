@@ -55,10 +55,10 @@ export default function OurGames () {
                       <h1 className="font-black text-4xl">{game.title}</h1>
                       <p className={styles.gameTitle}>{game.description}</p>
                       <div className="flex">
-                          <a target="_blank" href={game.googlePlayLink}>
+                          <a target="_blank"  rel="noreferrer" href={game.googlePlayLink}>
                           <img src="/app-store.png" width="137px" alt="" />
                           </a>
-                          <a target="_blank" href={game.appleStoreLink}>
+                          <a target="_blank" rel="noreferrer" href={game.appleStoreLink}>
                           <img src="/google-play.png" width="150px" alt="" />
                           </a>
                       </div>
@@ -90,10 +90,10 @@ export default function OurGames () {
                                     <h1 className="font-black text-4xl">{game.title}</h1>
                                     <p className={styles.gameTitle}>{game.description}</p>
                                     <div className="flex">
-                                        <a target="_blank" href={game.googlePlayLink}>
+                                        <a target="_blank" rel="noreferrer" href={game.googlePlayLink}>
                                             <img src="/app-store.png" width="137px" alt="" />
                                         </a>
-                                        <a target="_blank" href={game.appleStoreLink}>
+                                        <a target="_blank" rel="noreferrer" href={game.appleStoreLink}>
                                             <img src="/google-play.png" width="150px" alt="" />
                                         </a>
                                     </div>
@@ -117,10 +117,10 @@ export default function OurGames () {
                                     <h1 className="font-black text-4xl">{game.title}</h1>
                                     <p className={styles.gameTitle}>{game.description}</p>
                                     <div className="flex">
-                                        <a target="_blank" href={game.googlePlayLink}>
+                                        <a target="_blank" rel="noreferrer" href={game.googlePlayLink}>
                                             <img src="/app-store.png" width="137px" alt="" />
                                         </a>
-                                        <a target="_blank" href={game.appleStoreLink}>
+                                        <a target="_blank" rel="noreferrer" href={game.appleStoreLink}>
                                             <img src="/google-play.png" width="150px" alt="" />
                                         </a>
                                     </div>
