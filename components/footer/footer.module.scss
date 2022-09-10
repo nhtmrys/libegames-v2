@@ -1,0 +1,23 @@
+.shape1{
+  width: 20rem;
+  @media  (max-width: 1100px) {
+    width: 30%;
+  }
+  @media  (max-width: 767px) {
+    width: 10%;
+  }
+
+
+  @apply bg-purple p-2 rounded-tr-full
+}
+.shape2{
+  width: 20rem;
+  @media  (max-width: 1100px) {
+    width: 30%;
+  }
+  @media  (max-width: 767px) {
+    width: 10%;
+  }
+
+  @apply bg-purple p-4 rounded-tl-full
+}

@@ -1,0 +1,26 @@
+
+.gameTitle{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.mobileBanner{
+
+  display: none;
+  @apply max-w-sm mx-auto py-4 sm:px-6 lg:px-8;
+  @media screen and (max-width: 1024px) {
+
+    display: block;
+  }
+}
+.desktopBanner{
+  @apply max-w-sm mx-auto py-4 sm:px-6 lg:px-8;
+    display: block;
+
+    @media screen and (max-width: 1024px) {
+    display: none;
+    }
+}
