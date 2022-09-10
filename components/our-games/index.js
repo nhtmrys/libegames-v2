@@ -35,12 +35,12 @@ export default function OurGames () {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 ">
+        <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 bg-silver shadow-lg rounded-3xl">
             <div className="max-w-2xl mx-auto  lg:max-w-none  ">
                 <div id={"our-games"} className=" text-center text-4xl font-black mb-6">OUR GAMES</div>
                 <div
 
-                    className=" flex flex-row flex-wrap justify-around rounded-3xl bg-silver shadow-lg rounded-3xl "
+                    className=" flex flex-row flex-wrap justify-around rounded-3xl  "
                 >
       {games.slice(0,1).map((game, index) => (
           <>
