@@ -4,7 +4,7 @@ import styles from "./hero.module.scss";
 
 export default function Hero() {
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-x-hidden">
             <div className={styles.heroContainer}>
                 <div className="pt-16 sm:pt-24 sm:pb-0 lg:pt-40 lg:pb-48">
                     <div className={styles.titleContainer + " flex flex-wrap  mx-auto px-4 sm:px-6 lg:px-8 sm:static"}>
@@ -25,7 +25,7 @@ export default function Hero() {
                 </div>
                 <div className="lg:absolute lg:inset-y-0 lg:right-96">
                     <img
-                        className="h-64 w-full object-cover lg: md:h-full lg:h-full lg:w-full"
+                        className="h-80 w-full object-cover lg: md:h-full lg:h-full lg:w-full"
                         src="/3d-game-cup-prizes.png"
                         alt=""
                     />

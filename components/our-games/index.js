@@ -35,24 +35,30 @@ export default function OurGames () {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 bg-silver shadow-lg rounded-3xl">
+        <div className="overflow-hidden">
+        <div className={styles.gameContainer}  >
+
+            <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 rounded-3xl ">
             <div className="max-w-2xl mx-auto  lg:max-w-none  ">
                 <div id={"our-games"} className=" text-center text-4xl font-black mb-6">OUR GAMES</div>
+
                 <div
 
                     className=" flex flex-row flex-wrap justify-around rounded-3xl  "
                 >
       {games.slice(0,1).map((game, index) => (
-          <>
+          <div key={index}>
           <div className={styles.mobileBanner}>
               <Carousel game={game}/>
           </div>
           <div className="flex gap-5" key={index}>
 
               <div className="flex flex-col justify-center items-center ">
+
                   <div className="flex flex-col justify-center gap-2 p-10">
+
                       <p>{game.category}</p>
-                      <h1 className="font-black text-4xl">{game.title}</h1>
+                      <h1 className="font-black text-xl">{game.title}</h1>
                       <p className={styles.gameTitle}>{game.description}</p>
                       <div className="flex">
                           <a target="_blank"  rel="noreferrer" href={game.googlePlayLink}>
@@ -71,14 +77,14 @@ export default function OurGames () {
 
 
           </div>
-          </>
+          </div>
       ))}
                     {games.slice(1,2).map((game, index) => (
-                        <>
+                        <div key={index}>
                             <div className={styles.mobileBanner}>
                                 <Carousel game={game}/>
                             </div>
-                        <div className="flex gap-5" key={index}>
+                        <div className="flex justify-center" key={index}>
                             <div className="flex flex-col justify-center items-center ">
                                 <div className={styles.desktopBanner}>
                                     <Carousel game={game}/>
@@ -87,7 +93,7 @@ export default function OurGames () {
 
                                 <div className="flex flex-col justify-center gap-2 p-10">
                                     <p>{game.category}</p>
-                                    <h1 className="font-black text-4xl">{game.title}</h1>
+                                    <h1 className="font-black text-xl">{game.title}</h1>
                                     <p className={styles.gameTitle}>{game.description}</p>
                                     <div className="flex">
                                         <a target="_blank" rel="noreferrer" href={game.googlePlayLink}>
@@ -102,10 +108,10 @@ export default function OurGames () {
 
 
                         </div>
-                        </>
+                        </div>
                     ))}
                     {games.slice(2,3).map((game, index) => (
-                        <>
+                        <div key={index}>
                             <div className={styles.mobileBanner}>
                                 <Carousel game={game}/>
                             </div>
@@ -114,7 +120,7 @@ export default function OurGames () {
                             <div className="flex flex-col justify-center items-center ">
                                 <div className="flex flex-col justify-center gap-2 p-10">
                                     <p>{game.category}</p>
-                                    <h1 className="font-black text-4xl">{game.title}</h1>
+                                    <h1 className="font-black text-xl">{game.title}</h1>
                                     <p className={styles.gameTitle}>{game.description}</p>
                                     <div className="flex">
                                         <a target="_blank" rel="noreferrer" href={game.googlePlayLink}>
@@ -133,11 +139,13 @@ export default function OurGames () {
 
 
                         </div>
-                        </>
+                        </div>
                     ))}
 
                 </div>
   </div>
+            </div>
+        </div>
         </div>
  );
 }

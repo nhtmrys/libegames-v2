@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+const withOffline = require("next-offline");
+const withTranslateRoutes = require("next-translate-routes/plugin");
 
-module.exports = nextConfig
+module.exports = withTranslateRoutes(
+    withOffline({
+      i18n: {
+        defaultLocale: "en",
+        locales: ["en", "tr"],
+        localeDetection: false
+      },
+      reactStrictMode: true,
+      swcMinify: true,
+    })
+);

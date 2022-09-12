@@ -1,10 +1,10 @@
 
 .gameTitle{
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #000;
   margin-bottom: 1rem;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .mobileBanner{
@@ -17,10 +17,34 @@
   }
 }
 .desktopBanner{
-  @apply max-w-sm mx-auto py-4 sm:px-6 lg:px-8;
+  @apply max-w-3xl mx-auto py-4 sm:px-6 lg:px-8;
     display: block;
 
     @media screen and (max-width: 1024px) {
     display: none;
     }
+}
+.gameContainer{
+  background: linear-gradient(180deg, whitesmoke 0%, whitesmoke 100%);
+  width: 150%;
+  height: 150%;
+  border-radius: 100% 100% 100% 100%;
+  top: 0%;
+  left: -25%;
+  right: -25%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    width: 100%;
+    border-radius:5rem;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
 }

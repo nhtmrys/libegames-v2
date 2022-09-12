@@ -38,7 +38,7 @@ export default function ContactUs () {
              <div id={"contact"} className=" text-center text-4xl font-black mb-6">CONTACT US</div>
       <div
 
-          className=" flex flex-row flex-wrap justify-around rounded-3xl shadow-lg bg-purple max-w-7xl p-20"
+          className=" flex flex-row flex-wrap justify-around rounded-3xl shadow-lg bg-contact max-w-7xl p-20"
       >
 
           <div className=" ">
@@ -52,7 +52,18 @@ export default function ContactUs () {
                       >
                       <h4 className="text-xl text-white hidden md:block sm:block">Leave us a message</h4>
                       <input
-                          className="bg-input rounded-3xl p-2 w-full"
+                          className="bg-input rounded-3xl p-2 w-full  w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                           name="name"
                           type="text"
                           placeholder="Name"
@@ -62,7 +73,18 @@ export default function ContactUs () {
                           }}
                       />
                       <input
-                          className="bg-input rounded-3xl p-2 "
+                          className="bg-input rounded-3xl p-2 w-full  w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none "
                           name="email"
                           type="email"
                           placeholder="Email"
@@ -72,7 +94,18 @@ export default function ContactUs () {
                           }}
                       />
                       <textarea
-                          className="bg-input rounded-3xl p-2 "
+                          className="bg-input rounded-3xl p-2 w-full  w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none "
                           name="message"
                           rows={3}
                           placeholder="Message"

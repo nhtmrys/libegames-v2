@@ -21,6 +21,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar({ router }) {
+ const { locale } = router;
  const [open, setOpen] = useState(false);
 
  return (
@@ -74,6 +75,7 @@ export default function Navbar({ router }) {
                   </a>
                  </div>
              ))}
+             {locale == "tr" ? "ENG" : "TR"}
             </div>
            </div>
            <div className="flex items-center border-b py-5 mx-5">
